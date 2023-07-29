@@ -8,7 +8,7 @@ describe('CommonFormControlsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CommonFormControlsComponent]
+      declarations: [CommonFormControlsComponent],
     });
     fixture = TestBed.createComponent(CommonFormControlsComponent);
     component = fixture.componentInstance;
