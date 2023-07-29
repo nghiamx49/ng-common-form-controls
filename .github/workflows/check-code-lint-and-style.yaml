@@ -2,15 +2,15 @@ name: Check Repo Lint and Style Lint
 run-name: Checking commit ${{ github.sha}} on ${{ github.ref_name }} 🚀
 on: [push]
 jobs: 
-  Checking-new-commit:
+  checking-new-commit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Install Package
-      - run: npm i
+        run: npm i
       - name: Check Repo Lint
-      - run: npm run lint
+        run: npm run lint
       - name: Check Repo Code Style
-      - run: npm run check-format
+        run: npm run check-format
 
